@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "format:check": "prettier -c .",
+    "format": "prettier -w ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
