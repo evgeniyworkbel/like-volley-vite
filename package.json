@@ -12,7 +12,17 @@
     "lint": "yarn run lint:lang && yarn run lint:style",
     "lint:fix": "eslint --fix . && stylelint \"**/*.css\" --fix",
     "format:check": "prettier -c .",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier -c"
+    ],
+    "*.css": [
+      "stylelint"
+    ]
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -36,6 +46,8 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "prettier": "3.6.2",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
