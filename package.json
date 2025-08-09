@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
+    "lint:lang": "eslint .",
+    "lint:style": "stylelint \"**/*.css\"",
+    "lint": "yarn run lint:lang && yarn run lint:style",
+    "lint:fix": "eslint --fix . && stylelint \"**/*.css\" --fix",
     "format:check": "prettier -c .",
     "format": "prettier -w ."
   },
