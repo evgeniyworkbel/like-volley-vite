@@ -7,10 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint:lang": "eslint .",
-    "lint:style": "stylelint \"**/*.css\"",
-    "lint": "yarn run lint:lang && yarn run lint:style",
-    "lint:fix": "eslint --fix . && stylelint \"**/*.css\" --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "format:check": "prettier -c .",
     "format": "prettier -w .",
     "prepare": "husky"
@@ -19,9 +17,6 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint",
       "prettier -c"
-    ],
-    "*.css": [
-      "stylelint"
     ]
   },
   "dependencies": {
@@ -51,8 +46,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "prettier": "3.6.2",
-    "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0",
     "tw-animate-css": "^1.3.6",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
