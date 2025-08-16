@@ -17,6 +17,9 @@ export default tseslint.config([
       reactRefresh.configs.vite,
       eslintConfigPrettier,
     ],
+    rules: {
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
