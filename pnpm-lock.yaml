@@ -69,6 +69,9 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.20
         version: 0.4.20(eslint@9.32.0(jiti@2.5.1))
+      eslint-plugin-react-useeffect:
+        specifier: ^1.0.12
+        version: 1.0.12
       globals:
         specifier: ^16.3.0
         version: 16.3.0
@@ -1042,6 +1045,9 @@ packages:
     resolution: {integrity: sha512-XpbHQ2q5gUF8BGOX4dHe+71qoirYMhApEPZ7sfhF/dNnOF1UXnCMGZf79SFTBO7Bz5YEIT4TMieSlJBWhP9WBA==}
     peerDependencies:
       eslint: '>=8.40'
+
+  eslint-plugin-react-useeffect@1.0.12:
+    resolution: {integrity: sha512-XY9l/lvaFsCBVMDhsKghYffmxcKBzSRSrcNMonEQYfMbPs8PJrpcgIm7TrzxbRtEICabfRQTrhGJN4FZnXCH9w==}
 
   eslint-scope@8.4.0:
     resolution: {integrity: sha512-sNXOfKCn74rt8RICKMvJS7XKV/Xk9kA7DyJr8mJik3S7Cwgy3qlkkmyS2uQB3jiJg6VNdZd/pDBJu0nvG2NlTg==}
@@ -2768,6 +2774,8 @@ snapshots:
   eslint-plugin-react-refresh@0.4.20(eslint@9.32.0(jiti@2.5.1)):
     dependencies:
       eslint: 9.32.0(jiti@2.5.1)
+
+  eslint-plugin-react-useeffect@1.0.12: {}
 
   eslint-scope@8.4.0:
     dependencies:
